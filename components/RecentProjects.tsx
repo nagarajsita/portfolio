@@ -1,4 +1,3 @@
-"use client";
 import { projects } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
