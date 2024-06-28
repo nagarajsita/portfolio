@@ -12,7 +12,7 @@ const Footer = () => {
           className="w-full h-full opacity-30"
         />
       </div>
-      <div className="flex flex-col items-center h-[18rem] px-4 md:px-8 lg:px-16">
+      <div className="flex flex-col items-center h-[22rem] px-4 md:px-8 lg:px-16">
         <h1 className="text-center font-extrabold text-[32px] md:text-2xl lg:text-4xl mb-5 md:mb-8">
           Ready to discover emerging talent in tech?
         </h1>
