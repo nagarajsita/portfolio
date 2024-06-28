@@ -3,7 +3,7 @@ import { skills } from "@/data";
 
 const Grid = () => {
   return (
-    <section id="about" className="py-20">
+    <section id="skills" className="py-20">
       <div className="text-center h-full">
         <h1 className="text-center relative font-extrabold text-[32px] md:text-2xl lg:text-4xl mb-8 md:mb-14">
           Tech Stack and Skills
