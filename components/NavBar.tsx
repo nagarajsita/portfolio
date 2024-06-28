@@ -1,13 +1,25 @@
 import React from "react";
-import { FaCode, FaEnvelope, FaHome, FaProjectDiagram } from "react-icons/fa";
 import { FloatingNav } from "./ui/FloatingNavBar";
-const navItems = [
-  { name: "Home", link: "#home", icon: <FaHome /> },
-  { name: "Skills", link: "#skills", icon: <FaCode /> },
-  { name: "Projects", link: "#projects", icon: <FaProjectDiagram /> },
-  { name: "Contact", link: "#contact", icon: <FaEnvelope /> },
-];
+import { House, Code, Briefcase, EnvelopeSimple } from "phosphor-react";
 
+const navItems = [
+  { name: "Home", link: "#home", icon: <House weight="bold" size={20} /> },
+  {
+    name: "Skills",
+    link: "#skills",
+    icon: <Code weight="bold" size={20} />,
+  },
+  {
+    name: "Projects",
+    link: "#projects",
+    icon: <Briefcase weight="bold" size={20} />,
+  },
+  {
+    name: "Contact",
+    link: "#contact",
+    icon: <EnvelopeSimple weight="bold" size={20} />,
+  },
+];
 const NavBar = () => {
   return (
     <div>
