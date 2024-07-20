@@ -18,6 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="Xn8g41V3TKqHic6My1v-unRjX3HbXXQ3IizIRQsL6HM"
+        />
+      </head>
       <body>
         <Analytics />
         <SpeedInsights />
