@@ -15,8 +15,17 @@ export const skills = [
 ];
 
 export const projects = [
-  {
+   {
     id: 1,
+    title: "Aoom - Video Conferencing App",
+    des: "A Video conferencing app with a responsive interface, secure authentication, reliable video management, and modern design for seamless collaboration.",
+    img: "/p0.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/c.svg", "/s.svg"],
+    link: "https://github.com/nagarajsita/Aoom.git",
+    link1:"https://nagarajsita.vercel.app"
+  },
+  {
+    id: 2,
     title: "SimplePay - Payments App",
     des: "The End-to-End MERN payment app blends robust database management, secure sign-in, dynamic dashboards, and seamless money transfers.",
     img: "/p1.svg",
@@ -24,7 +33,7 @@ export const projects = [
     link: "https://github.com/nagarajsita/Simple-Pay.git",
   },
   {
-    id: 2,
+    id: 3,
     title: "OpenBook - Book Management App",
     des: "A comprehensive full-stack CRUD application, seamlessly integrates efficient data management, interactive user interfaces, and robust API handling.",
     img: "/p2.svg",

@@ -1,3 +1,4 @@
+"use client";
 import { projects } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,8 +12,8 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-12 gap-y-8 mt-10">
-        {projects.map(({ id, title, des, img, iconLists, link }) => (
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-12 gap-y-8 mt-5">
+        {projects.map(({ id, title, des, img, iconLists, link,link1 }) => (
           <div key={id} className="w-full sm:w-[30rem]">
             <CardContainer className="inter-var">
               <CardBody className="relative group/card dark:hover:shadow-xl dark:hover:shadow-emerald-500/[0.1] dark:border-blue-950/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 md:p-6 border">
@@ -45,7 +46,7 @@ const RecentProjects = () => {
                         {iconLists.map((icon, index) => (
                           <div
                             key={icon}
-                            className="border border-white/[0.2] rounded-full bg-black w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 flex justify-center items-center"
+                            className="border border-white/[0.2] rounded-full bg-black w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 flex justify-center items-center"
                             style={{
                               transform: `translateX(-${5 * index * 2}px)`,
                             }}
@@ -56,7 +57,8 @@ const RecentProjects = () => {
                       </div>
                     </div>
                   </CardItem>
-                  <CardItem
+
+                    {link &&<CardItem
                     translateZ={20}
                     as={Link}
                     href={link}
@@ -65,6 +67,17 @@ const RecentProjects = () => {
                   >
                     Check out!
                   </CardItem>
+                }
+                  {link1 &&                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    href={link}
+                    target="__blank"
+                    className="px-3 py-1 md:px-4 md:py-2 mt-5 md:mt-7 mb-3 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  >
+                    Live Link
+                  </CardItem>
+  }
                 </div>
               </CardBody>
             </CardContainer>
