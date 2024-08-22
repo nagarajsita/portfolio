@@ -71,7 +71,7 @@ const RecentProjects = () => {
                   {link1 &&                  <CardItem
                     translateZ={20}
                     as={Link}
-                    href={link}
+                    href={link1}
                     target="__blank"
                     className="px-3 py-1 md:px-4 md:py-2 mt-5 md:mt-7 mb-3 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                   >
