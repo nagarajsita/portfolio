@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-import { FaArrowUp, FaGithub } from "react-icons/fa";
+import { FaArrowUp, FaGithub, FaLocationArrow } from "react-icons/fa";
+import { Farro } from "next/font/google";
 
 const RecentProjects = () => {
   return (
@@ -69,15 +70,30 @@ const RecentProjects = () => {
                    Repo Link
                   </CardItem>)
                 }
-                  {link1 &&                  <CardItem
+                                     
+                  {link1 &&  
+                (<div className="flex gap-1">
+                         <CardItem
+                    translateZ={20}
+                    as={Link}
+                    href={link}
+                    target="__blank"
+                    className="px-3 py-1 md:px-4 md:py-2 mt-5 md:mt-7 mb-3 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  >
+                    <FaGithub className="size-4"/>
+                  </CardItem>
+
+                  <CardItem
                     translateZ={20}
                     as={Link}
                     href={link1}
                     target="__blank"
                     className="px-3 py-1 md:px-4 md:py-2 mt-5 md:mt-7 mb-3 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                   >
-                    Live Link
+                   <div className="flex gap-1"> Live Link
+                          <FaLocationArrow className="fill-blue-600"/></div>
                   </CardItem>
+                      </div>)
   }
                 </div>
               </CardBody>
