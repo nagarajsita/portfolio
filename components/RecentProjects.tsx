@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
+import { FaArrowUp, FaGithub } from "react-icons/fa";
 
 const RecentProjects = () => {
   return (
@@ -58,15 +59,15 @@ const RecentProjects = () => {
                     </div>
                   </CardItem>
 
-                    {link &&<CardItem
+                    {!link1 &&(<CardItem
                     translateZ={20}
                     as={Link}
                     href={link}
                     target="__blank"
                     className="px-3 py-1 md:px-4 md:py-2 mt-5 md:mt-7 mb-3 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                   >
-                    Check out!
-                  </CardItem>
+                   Repo Link
+                  </CardItem>)
                 }
                   {link1 &&                  <CardItem
                     translateZ={20}
