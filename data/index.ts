@@ -22,7 +22,7 @@ export const projects = [
     img: "/p0.svg",
     iconLists: ["/next.svg", "/tail.svg", "/c.svg", "/s.svg"],
     link: "https://github.com/nagarajsita/Aoom.git",
-    link1:"https://nagarajsita.vercel.app"
+    link1:"https://aoom.vercel.app"
   },
   {
     id: 2,
