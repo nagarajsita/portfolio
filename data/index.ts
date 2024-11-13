@@ -10,13 +10,20 @@ export const skills = [
   "/tail.svg",
   "/mongo.svg",
   "/mysql.svg",
-  "/hadoop.svg",
-  "/hive.svg",
+
 ];
 
 export const projects = [
-   {
+  {
     id: 1,
+    title: "OInterview – Technical Interview Platform",
+    des: "A real-time interview platform that streamlines technical interviews with integrated video calls, interactive code editing, and instant messaging in room-based sessions.",
+    img: "/p-1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/node.svg", "/wrtc.svg"],
+    link: "https://github.com/nagarajsita/OInterview.git",
+  },
+  {
+    id: 2,
     title: "Aoom - Video Conferencing App",
     des: "A Video conferencing app with a responsive interface, secure authentication, reliable video management, and modern design for seamless collaboration.",
     img: "/p0.svg",
@@ -25,7 +32,7 @@ export const projects = [
     link1:"https://aoom.vercel.app"
   },
   {
-    id: 2,
+    id: 3,
     title: "SimplePay - Payments App",
     des: "The End-to-End MERN payment app blends robust database management, secure sign-in, dynamic dashboards, and seamless money transfers.",
     img: "/p1.svg",
@@ -33,7 +40,7 @@ export const projects = [
     link: "https://github.com/nagarajsita/Simple-Pay.git",
   },
   {
-    id: 3,
+    id: 4,
     title: "OpenBook - Book Management App",
     des: "A comprehensive full-stack CRUD application, seamlessly integrates efficient data management, interactive user interfaces, and robust API handling.",
     img: "/p2.svg",

@@ -23,6 +23,7 @@ export default function RootLayout({
           name="google-site-verification"
           content="Xn8g41V3TKqHic6My1v-unRjX3HbXXQ3IizIRQsL6HM"
         />
+        <link rel="icon" href="/icon.ico" type="image/x-icon" />
       </head>
       <body>
         <Analytics />

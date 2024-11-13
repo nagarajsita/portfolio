@@ -65,7 +65,7 @@ const RecentProjects = () => {
                     as={Link}
                     href={link}
                     target="__blank"
-                    className="px-3 py-1 md:px-4 md:py-2 mt-5 md:mt-7 mb-3 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    className="px-3 py-1 md:px-4 md:py-2 mt-5 md:mt-7 mb-3 cursor-pointer rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                   >
                    Repo Link
                   </CardItem>)
@@ -73,14 +73,15 @@ const RecentProjects = () => {
                                      
                   {link1 &&  
                 (<div className="flex gap-1">
-                         <CardItem
-                    translateZ={20}
+                  
+                  <CardItem
+                    translateZ={80}
                     as={Link}
                     href={link}
                     target="__blank"
-                    className="px-3 py-1 md:px-4 md:py-2 mt-5 md:mt-7 mb-3 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    className="cursor-pointer px-3 py-1 md:px-4 md:py-2 mt-5 md:mt-7 mb-3 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                   >
-                    <FaGithub className="size-4"/>
+                    <FaGithub className="size-4 "/>
                   </CardItem>
 
                   <CardItem
@@ -94,7 +95,7 @@ const RecentProjects = () => {
                           <FaLocationArrow className="fill-blue-600"/></div>
                   </CardItem>
                       </div>)
-  }
+                  }
                 </div>
               </CardBody>
             </CardContainer>
